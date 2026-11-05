@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- logo  -->
     <main class="page">
         <section class="branding">
             <img src="Images/logo.png" alt="School logo">
         </section>
-        <section class="buttons">
-            <button id="login">Login</button>
-        </section>
-        <section class="forms">
 
-    <label for="name">Please enter your name</label>
-    <input type="text">
-<label for="Email">Please enter your email</label>
-    <input type="text">
+        <!-- login button  -->
+        <section class="login-panel">
+            <div class="buttons">  
+        <button type="button">Login</button>
+            </div>
+
+            <!-- fomrs input  -->
+        <form class="forms" id="login-form">
+<label for="name">Please enter your name</label>
+    <input type="text" id="name" required>
+
+    <!-- email input  -->
+<label for="email">Please enter your email</label>
+    <input type="email" id="email" required>
+
+    <!-- input password  -->
     <label for="password">Please enter your password</label>
-    <input type="text">
-    <button id="show-password"> Show password</button>
-        </section>
-        <section>
-            <button>
-                 Sign in
-            </button>
-           
+    <input type="password" id="password" required>
+    <button type="button" id="show-password">Show password</button>
+  <button type="submit">Sign in</button>
+        </form>
+        
         </section>
     </main>
- 
+ <script src="Script.js"></script>
 </body>
 </html>

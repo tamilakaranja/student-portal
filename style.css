@@ -18,3 +18,16 @@ body {
  color: var(--ink);
  background: var(--maroon);
 }
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+.brand {
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
