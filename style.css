@@ -24,10 +24,22 @@ body {
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
 }
-.brand {
+.login-panel {
     background-color: var(--cream);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
+}
+.buttons, .forms {
+    width: 100%;
+    max-width: 560px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    background: white;
+    border-radius: 999px;
 }
