@@ -7,3 +7,14 @@
   --success: #14532D;
   --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ font-family: var(--font);
+ color: var(--ink);
+ background: var(--maroon);
+}
