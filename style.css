@@ -1,0 +1,9 @@
+:root {
+  --cream: #FFFBEB;
+  --maroon: #722F37;
+  --ink: #2B1A1D;
+  --field: #ECECEC;
+  --error: #8A1C2B;
+  --success: #14532D;
+  --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
