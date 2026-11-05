@@ -16,7 +16,7 @@ body {
  margin: 0;
  font-family: var(--font);
  color: var(--ink);
- background: var(--maroon);
+ background: var(--cream);
 }
 
 .page {
@@ -25,7 +25,7 @@ body {
     min-height: 100vh;
 }
 .login-panel {
-    background-color: var(--cream);
+    background-color: var(--maroon);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,4 +57,16 @@ font-size: medium;
 cursor: pointer;
 
 
+}
+.forms {
+    margin-top: 32px;
+}
+
+.forms label {
+    display: block;
+    margin: 28px 0 10px 24px;
+    color: var(--cream);
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
