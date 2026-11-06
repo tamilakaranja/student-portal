@@ -43,7 +43,9 @@ body {
 .buttons {
     display: flex;
     justify-content: center;
-    padding: 8px;
+    padding: 7 2%px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: white;
     border-radius: 999px;
 }
@@ -63,6 +65,9 @@ cursor: pointer;
 
 }
 
+.login-panel {
+    padding: 8px 5%;
+}
 /* forms  */
 .forms {
     margin-top: 32px;
