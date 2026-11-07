@@ -18,3 +18,14 @@ body {
   background: var(--cream);
 }
 
+/* top bar  */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 14px 48px;
+  background: var(--maroon);
+  color: var(--cream);
+}
