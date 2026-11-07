@@ -138,7 +138,8 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
-
+/* hover  */
 .filters button:hover {
   border-color: var(--maroon);
 }
+
