@@ -243,4 +243,12 @@ body {
   background: rgba(43, 26, 29, 0.6);
 }
 
-
+/* show and hide  */
+.modal-hide {
+  display: none;
+}
+ 
+.successhide {
+  display: none;
+}
+ 
