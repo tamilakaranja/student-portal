@@ -31,3 +31,14 @@ const assignments = {
       'What does a seed need to start growing?'
     ]
   }, 
+    'socialstudies': {
+    subject: 'Social studies',
+    title: 'Map of Kenya',
+    details: 'Mark the main counties and rivers on the outline map.',
+    questions: [
+      'Name three counties you marked on your map.',
+      'Name two rivers you marked on your map.'
+    ]
+  }
+};
+
