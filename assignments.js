@@ -11,4 +11,14 @@ const assignments = {
       'In your own words, what is a numerator?'
     ]
   },
+    'english': {
+    subject: 'English',
+    title: 'Composition: My best day',
+    details: 'Write about your favourite day, one paragraph for each part.',
+    questions: [
+      'Write a paragraph about the morning of your best day.',
+      'Write a paragraph about the afternoon.',
+      'Write a paragraph about the evening and how you felt.'
+    ]
+    },
   
