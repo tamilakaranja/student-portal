@@ -21,4 +21,13 @@ const assignments = {
       'Write a paragraph about the evening and how you felt.'
     ]
     },
-  
+
+  'science': {
+    subject: 'Science',
+    title: 'Plant life cycle diagram',
+    details: 'Label the stages from seed to flowering plant.',
+    questions: [
+      'List the stages of a plant life cycle in order.',
+      'What does a seed need to start growing?'
+    ]
+  }, 
