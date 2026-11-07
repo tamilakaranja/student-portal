@@ -193,11 +193,19 @@ body {
   text-transform: uppercase;
   color: var(--maroon);
 }
-
+ /* line breaks  */
 .lesson {
   display: flex;
   align-items: center;
   gap: 16px;
   padding: 14px 0;
   border-top: 1px solid #EFE6C8;
+}
+/* time  */
+.lesson-time {
+  flex: none;
+  width: 104px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--maroon);
 }
