@@ -150,7 +150,7 @@ body {
   text-decoration: none;
 }
 
-/* hover  */
+/* hover animation */
 
 .all-cards > a:hover,
 .all-cards > a:focus-visible {
@@ -166,4 +166,29 @@ body {
   65%  { transform: translateY(-6px); }
   80%  { transform: translateY(0); }
   100% { transform: translateY(0); }
+}
+
+
+/* responsive design  */
+ /* for tablets  */
+@media (max-width: 1000px) {
+  .all-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* for phones  */
+@media (max-width: 600px) {
+  .all-cards {
+    grid-template-columns: 1fr;
+  }
+  .topbar {
+    padding: 14px 20px;
+  }
+  .dashboard {
+    padding: 32px 20px;
+  }
+  .assignments-due {
+    padding: 28px 24px;
+  }
 }
