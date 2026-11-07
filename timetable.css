@@ -125,6 +125,8 @@ body {
   align-items: start;
   margin-top: 28px;
 }
+
+
  /* card display  */
 .tips-card,
 .day-card {
@@ -132,4 +134,17 @@ body {
   border: 1px solid #EADFBD;
   border-radius: 28px;
   background: #fff;
+}
+
+/* card content  */
+.tips-card h2,
+.day-card h2 {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+ 
+.card-sub {
+  margin: 2px 0 8px;
+  font-size: 0.875rem;
+  color: var(--muted);
 }
