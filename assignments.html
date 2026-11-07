@@ -93,8 +93,32 @@
             </div>
             </main>
 
+<!-- assignment poop ups  -->
 
+<div class="modal-hide" id="assignmentmodal">
+    <div class="modal-box">
+        <button type="button" class="modal-close" id="modalClose">close</button>
 
+        <p class="subject" id="modalsubject"></p>
+        <h2 id="modaltitle"></h2>
+        <p class="due" id="modaldue"></p>
+        <p class="details" id="modaldetails"></p>
+
+        <form id="assignmentform">
+            <div id="modalquestions"></div>
+            <p class="form-error" id="formError"></p>
+            <button type="submit" class="open-btn" id="submitbtn">Submit assignment</button>
+        </form>
+
+        <div class="successhide" id="successmsg">
+             <h3>Submitted</h3>
+            <p>Your assignment has been submitted!</p>
+            <button type="button" class="open-btn" id="successClose">Close</button>
+</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
             
 </body>
 </html>
