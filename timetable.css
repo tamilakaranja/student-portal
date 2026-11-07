@@ -148,3 +148,38 @@ body {
   font-size: 0.875rem;
   color: var(--muted);
 }
+
+/* tips  */
+
+.tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid #EFE6C8;
+}
+ 
+.tip-number {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--maroon);
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.tip h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+ 
+.tip p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+ 
