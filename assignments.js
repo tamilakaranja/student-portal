@@ -8,7 +8,7 @@ const assignments = {
     questions: [
       'Write 1/2 + 1/4 as one fraction.',
       'Which is bigger, 3/4 or 2/3? Explain how you know.',
-      'In your own words, what is a numerator?'
+      'In your own words, what is a numerataor?'
     ]
   },
     'english': {
