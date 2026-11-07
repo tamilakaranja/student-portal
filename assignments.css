@@ -215,3 +215,17 @@ body {
   line-height: 1.5;
   color: var(--muted);
 }
+.open-btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: auto;
+  min-height: 44px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--maroon);
+  color: var(--cream);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
