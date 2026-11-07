@@ -45,7 +45,7 @@ body {
   border-radius: 50%;
   background: var(--cream);
 }
-
+ /* school name and subname  */
 .school-name {
   font-size: 1.125rem;
   font-weight: 600;
@@ -55,6 +55,8 @@ body {
   font-size: 0.8125rem;
   color: #F3E8D6;
 }
+
+/* actions  */
 .top-bar-actions {
   display: flex;
   flex-wrap: wrap;
