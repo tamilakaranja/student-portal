@@ -193,3 +193,11 @@ body {
   text-transform: uppercase;
   color: var(--maroon);
 }
+
+.lesson {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid #EFE6C8;
+}
