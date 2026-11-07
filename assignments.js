@@ -1,4 +1,11 @@
+const form = document.getElementById('assignmentform');
+const successBox = document.getElementById('successmsg');
+const successCloseBtn = document.getElementById('successClose');
+
+
+
 // assignments content
+
 
 const assignments = {
   'math': {
@@ -98,3 +105,5 @@ closeBtn.addEventListener('click', closeModal);
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') closeModal();
 });
+
+
