@@ -42,3 +42,14 @@ const assignments = {
   }
 };
 
+
+
+const modal = document.getElementById('assignmentmodal');
+const questionsBox = document.getElementById('modalquestions');
+const closeBtn = document.getElementById('modalClose');
+
+
+// open popup
+function openModal(id) {
+  const item = assignments[id];
+  const card = document.querySelector('[data-id="' + id + '"]');
