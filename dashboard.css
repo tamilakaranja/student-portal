@@ -5,3 +5,15 @@
   --muted: #5E4B4E;
   --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--cream);
+}
