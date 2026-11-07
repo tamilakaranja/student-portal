@@ -221,3 +221,14 @@ body {
   font-size: 0.875rem;
   color: var(--muted);
 }
+/* due bachground  */
+.due-time {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #FFF1C9;
+  color: #6B4200;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
