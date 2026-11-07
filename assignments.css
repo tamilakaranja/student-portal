@@ -87,3 +87,14 @@ body {
   outline-offset: 2px;
 }
 
+/* main text  */
+.dashboard {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
