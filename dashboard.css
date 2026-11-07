@@ -84,3 +84,22 @@ body {
   border: 1.5px solid var(--cream);
   color: var(--cream);
 }
+
+/* greeting  */
+
+.dashboard {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 4px;
+  color: var(--muted);
+}
+
