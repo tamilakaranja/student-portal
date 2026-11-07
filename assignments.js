@@ -112,3 +112,12 @@ document.addEventListener('keydown', function (event) {
 });
 
 
+// submit shows the confirmation
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  form.classList.add('successhide');
+  successBox.classList.remove('successhide');
+});
+
+successCloseBtn.addEventListener('click', closeModal);
+
