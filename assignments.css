@@ -98,3 +98,9 @@ body {
   font-size: 2rem;
   font-weight: 600;
 }
+
+/* responsive design  */
+@media (max-width: 600px) {
+  .topbar { padding: 14px 20px; }
+  .dashboard { padding: 32px 20px; }
+}
