@@ -77,3 +77,10 @@ function openModal(id) {
     wrap.appendChild(box);
     questionsBox.appendChild(wrap);
   });
+
+// close popup
+  modal.classList.remove('modal-hide');
+}
+
+function closeModal() {
+  modal.classList.add('modal-hide'); }
