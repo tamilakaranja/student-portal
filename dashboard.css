@@ -129,3 +129,23 @@ body {
   font-size: 1.625rem;
   font-weight: 600;
 }
+
+.all-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.all-cards > a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 170px;
+  padding: 28px;
+  border: 1px solid #EADFBD;
+  border-radius: 28px;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+}
