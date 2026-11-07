@@ -97,7 +97,7 @@ function openModal(id) {
 function closeModal() {
   modal.classList.add('modal-hide'); }
 
-  document.querySelectorAll('.open-btn').forEach(function (button) {
+ document.querySelectorAll('.assignment-card .open-btn').forEach(function (button) {
   button.addEventListener('click', function (event) {
     event.preventDefault();
     const card = button.closest('.assignment-card');
