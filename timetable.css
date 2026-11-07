@@ -125,3 +125,11 @@ body {
   align-items: start;
   margin-top: 28px;
 }
+ /* card display  */
+.tips-card,
+.day-card {
+  padding: 28px;
+  border: 1px solid #EADFBD;
+  border-radius: 28px;
+  background: #fff;
+}
