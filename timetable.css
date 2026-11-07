@@ -86,7 +86,7 @@ body {
   outline: 3px solid #FFC53D;
   outline-offset: 2px;
 }
-
+ /* man content  */
 .dashboard {
   max-width: 1240px;
   margin: 0 auto;
@@ -101,4 +101,17 @@ body {
 .subtitle {
   margin-top: 4px;
   color: var(--muted);
+}
+
+
+/* back link  */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--maroon);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
 }
