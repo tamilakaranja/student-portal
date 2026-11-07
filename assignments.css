@@ -263,3 +263,28 @@ body {
   background: #fff;
 }
 
+.modal-box h2 {
+  margin: 8px 0 4px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+ 
+.modal-box .details {
+  margin: 12px 0 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--maroon);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
