@@ -29,3 +29,18 @@ body {
   background: var(--maroon);
   color: var(--cream);
 }
+
+/* logo  */
+.dashboard-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dashboard-logo img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--cream);
+}
