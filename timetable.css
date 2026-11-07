@@ -209,3 +209,10 @@ body {
   font-weight: 600;
   color: var(--maroon);
 }
+
+/* subject */
+.lesson-subject {
+  font-size: 1rem;
+  font-weight: 600;
+}
+ 
