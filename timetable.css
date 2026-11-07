@@ -216,3 +216,8 @@ body {
   font-weight: 600;
 }
  
+/* room */
+.lesson-room {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
