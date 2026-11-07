@@ -59,3 +59,21 @@ function openModal(id) {
   document.getElementById('modaltitle').textContent = item.title;
   document.getElementById('modaldue').textContent = card.querySelector('.due').textContent;
   document.getElementById('modaldetails').textContent = item.details;
+
+ // One label and one answer box per question
+  questionsBox.textContent = '';
+  item.questions.forEach(function (text, index) {
+    const wrap = document.createElement('div');
+    wrap.className = 'question';
+
+    const label = document.createElement('label');
+    label.htmlFor = 'q-' + index;
+    label.textContent = (index + 1) + '. ' + text;
+
+    const box = document.createElement('textarea');
+    box.id = 'q-' + index;
+
+    wrap.appendChild(label);
+    wrap.appendChild(box);
+    questionsBox.appendChild(wrap);
+  });
