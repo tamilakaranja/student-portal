@@ -215,6 +215,7 @@ body {
   line-height: 1.5;
   color: var(--muted);
 }
+/* open assignment  */
 .open-btn {
   display: inline-flex;
   align-items: center;
