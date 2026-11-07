@@ -115,3 +115,13 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+
+/* layout  */
+
+.timetable-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: start;
+  margin-top: 28px;
+}
