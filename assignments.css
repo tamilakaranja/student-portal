@@ -313,3 +313,24 @@ body {
   font-size: 0.9375rem;
   resize: vertical;
 }
+
+
+ /* confirmation mesage  */
+.success {
+  padding: 24px 0 8px;
+  text-align: center;
+}
+ 
+.success h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+ 
+.success p {
+  margin: 8px 0 24px;
+  color: var(--muted);
+}
+ 
+.success .open-btn {
+  margin: 0 auto;
+}
