@@ -86,6 +86,11 @@ function openModal(id) {
   });
 
 // close popup
+  form.classList.remove('successhide');
+  successBox.classList.add('successhide');
+
+  // show the popup
+  modal.classList.remove('modal-hide');
   modal.classList.remove('modal-hide');
 }
 // clicks
