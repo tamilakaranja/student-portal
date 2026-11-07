@@ -104,3 +104,16 @@ body {
   .topbar { padding: 14px 20px; }
   .dashboard { padding: 32px 20px; }
 }
+
+
+/* backlink  */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--maroon);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
