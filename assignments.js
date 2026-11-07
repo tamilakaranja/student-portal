@@ -53,3 +53,9 @@ const closeBtn = document.getElementById('modalClose');
 function openModal(id) {
   const item = assignments[id];
   const card = document.querySelector('[data-id="' + id + '"]');
+
+  // Fill in the text
+  document.getElementById('modalsubject').textContent = item.subject;
+  document.getElementById('modaltitle').textContent = item.title;
+  document.getElementById('modaldue').textContent = card.querySelector('.due').textContent;
+  document.getElementById('modaldetails').textContent = item.details;
