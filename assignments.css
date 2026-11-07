@@ -176,3 +176,42 @@ body {
   text-transform: uppercase;
   color: var(--maroon);
 }
+
+/* coloured status  */
+.status {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #FFF1C9;
+  color: #6B4200;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.assignment-card[data-status="submitted"] .status {
+  background: #DDF5E6;
+  color: #14532D;
+}
+
+.assignment-card[data-status="overdue"] .status {
+  background: #FBE3E6;
+  color: #8A1C2B;
+}
+
+.assignment-card h2 {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.due {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.details {
+  margin-bottom: 18px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
