@@ -45,3 +45,13 @@ body {
   border-radius: 50%;
   background: var(--cream);
 }
+
+.school-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.sub-name {
+  font-size: 0.8125rem;
+  color: #F3E8D6;
+}
