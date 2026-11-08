@@ -239,3 +239,29 @@ video-subject {
   font-size: 15px;
   color: var(--muted);
 }
+
+
+/* notes section  */
+.notes h2,
+.playlist-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+ 
+.notes {
+  margin-bottom: 18px;
+}
+ 
+.notes-card textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 18px 22px;
+  border: 1.5px solid #8A7F5E;
+  border-radius: 24px;
+  background: var(--cream);
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: vertical;
+}
