@@ -110,3 +110,8 @@ function finishQuiz() {
   quizScreen.classList.add('screen-hide');
   resultScreen.classList.remove('screen-hide');
 }
+
+subjectEl.textContent = quiz.subject + ' - ' + quiz.title;
+timerEl.textContent = formatTime(secondsLeft) + ' left';
+showQuestion();
+const timer = setInterval(tick, 1000);
