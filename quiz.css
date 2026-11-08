@@ -294,6 +294,15 @@ body {
   height: 190px;
   margin: 0 auto 24px;
   border-radius: 50%;
-  background: conic-gradient(var(--maroon) calc(var(--score, 0) * 1%), #EADFBD 0);
+ background: var(--muted);
+ }
+.score-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+  background: #fff;
 }
- 
