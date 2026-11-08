@@ -29,3 +29,12 @@ const optionsBox = document.getElementById('options');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 const reviewBtn = document.getElementById('review-btn');
+
+
+const total = quiz.questions.length;
+const totalSeconds = quiz.minutes * 60;
+let current = 0;                 
+let answers = [];                
+let remaining = totalSeconds;    
+let timerId = null;
+let reviewing = false;
