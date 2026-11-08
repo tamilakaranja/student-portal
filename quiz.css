@@ -306,3 +306,58 @@ body {
   border-radius: 50%;
   background: #fff;
 }
+
+.score-inner b {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.score-inner span {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.result-card h2 {
+  margin-bottom: 6px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.result-card p {
+  color: var(--muted);
+}
+
+.result-facts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.fact {
+  min-width: 120px;
+  padding: 14px 18px;
+  border-radius: 20px;
+  background: var(--cream);
+}
+
+.fact b {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.fact span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
