@@ -62,7 +62,23 @@ watchedBtn.addEventListener('click', function () {
 
 
 
-
+ filters.forEach(function (other) { other.classList.remove('is-active'); });
+    button.classList.add('is-active');
+ 
+    // show only the videos for that subject
+    let firstVisible = null;
+    items.forEach(function (item) {
+      const show = subject === 'all' || item.dataset.subject === subject;
+      item.style.display = show ? '' : 'none';
+      if (show && !firstVisible) firstVisible = item;
+    });
+ 
+    // if the video on screen was filtered out, play the first one left
+    if (current.style.display === 'none' && firstVisible) {
+      playVideo(firstVisible);
+    }
+  });
+});
 
 
 
