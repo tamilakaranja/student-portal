@@ -149,3 +149,60 @@ cursor: pointer;
     font-weight: 500;
     cursor: pointer;
 }
+
+
+/* responsive design  */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: 1fr;     
+    grid-template-rows: auto 1fr;   
+  }
+
+  .branding {
+    padding: 32px 24px;
+  }
+
+  .branding img {
+    max-width: 160px;
+  }
+
+  .login-panel {
+    padding: 40px 20px 56px;
+  }
+}
+
+/* phones  */
+@media (max-width: 480px) {
+  .branding img {
+    max-width: 120px;
+  }
+
+  .login-panel {
+    padding: 32px 16px 48px;
+  }
+
+  .buttons button {
+    width: 100%;                    
+    padding: 10px 20px;
+  }
+
+  .forms label {
+    margin-left: 16px;
+    font-size: 0.75rem;
+  }
+
+  .forms input {
+    padding: 0 18px;
+    font-size: 16px;                
+  }
+
+  #show-password {
+    margin-left: 16px;
+  }
+
+  .forms button[type="submit"] {
+    width: 100%;                    
+    padding: 0 24px;
+  }
+}
