@@ -38,3 +38,11 @@ let answers = [];
 let remaining = totalSeconds;    
 let timerId = null;
 let reviewing = false;
+
+
+function showQuestion() {
+  const q = quiz.questions[current];
+
+  questionEl.textContent = q.question;
+  countEl.textContent = 'Question ' + (current + 1) + ' of ' + total;
+  progressFill.style.width = ((current + 1) / total * 100) + '%';
