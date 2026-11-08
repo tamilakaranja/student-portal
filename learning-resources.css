@@ -316,3 +316,30 @@ video-subject {
   font-size: 14px;
   color: var(--muted);
 }
+
+/* responsive design 
+ */
+
+ @media (max-width: 900px) {
+  .videos-layout {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+@media (max-width: 600px) {
+  .topbar {
+    padding: 14px 20px;
+  }
+  .dashboard {
+    padding: 32px 20px;
+  }
+  .video-card,
+  .notes-card,
+  .playlist-card {
+    padding: 24px 20px;
+  }
+  .video-row h2 {
+    font-size: 22px;
+  }
+}
+ 
