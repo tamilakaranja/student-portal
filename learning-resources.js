@@ -17,7 +17,11 @@ let current = null;
 function playVideo(item) {
   current = item;
 
-
+items.forEach(function (other) { other.classList.remove('is-active'); });
+  item.classList.add('is-active');
+  subjectEl.textContent = item.dataset.subject;
+  titleEl.textContent = item.dataset.title;
+  detailsEl.textContent = item.dataset.minutes + ' min \u00B7 Video lesson';
 
 
 
