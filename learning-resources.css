@@ -84,3 +84,24 @@ body {
   border: 1.5px solid var(--cream);
   color: var(--cream);
 }
+
+/* main content  */
+
+.dashboard {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 48px;
+}
+ 
+/* back link  */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--maroon);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+ 
