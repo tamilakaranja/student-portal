@@ -88,7 +88,7 @@ body {
 
 /* main page area  */
 
-dashboard {
+.dashboard {
   max-width: 1240px;
   margin: 0 auto;
   padding: 48px;
@@ -126,4 +126,39 @@ dashboard {
 .start-btn-outline {
   background: #fff;
   color: var(--maroon);
+}
+
+
+/* new quiz banner  */
+.quiz-banner {
+  margin: 24px 0 32px;
+  padding: 36px;
+  border-radius: 28px;
+  background: var(--maroon);
+  color: var(--cream);
+}
+ 
+.banner-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #F3E8D6;
+}
+ 
+.quiz-banner h2 {
+  margin: 6px 0 4px;
+  font-size: 28px;
+  font-weight: 600;
+}
+ 
+.banner-details {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #F3E8D6;
+}
+.quiz-banner .start-btn {
+  border-color: var(--cream);
+  background: var(--cream);
+  color: var(--ink);
 }
