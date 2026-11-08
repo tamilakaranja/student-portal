@@ -81,3 +81,9 @@ nextBtn.addEventListener('click', function () {
     finishQuiz();
   }
 });
+
+function tick() {
+  secondsLeft--;
+  timerEl.textContent = formatTime(secondsLeft) + ' left';
+  if (secondsLeft <= 0) finishQuiz();
+}
