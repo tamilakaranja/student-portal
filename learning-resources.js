@@ -47,7 +47,18 @@ items.forEach(function (item) {
   item.addEventListener('click', function () { playVideo(item); });
 });
 
+// marked as watched 
 
+function updateWatchedButton() {
+  const isWatched = current.classList.contains('watched');
+  watchedBtn.textContent = isWatched ? 'Watched \u2713' : 'Mark as watched';
+  watchedBtn.classList.toggle('is-watched', isWatched);
+}
+ 
+watchedBtn.addEventListener('click', function () {
+  current.classList.toggle('watched');
+  updateWatchedButton();
+});
 
 
 
