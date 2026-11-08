@@ -65,7 +65,7 @@ watchedBtn.addEventListener('click', function () {
  filters.forEach(function (other) { other.classList.remove('is-active'); });
     button.classList.add('is-active');
  
-    // show only the videos for that subject
+   
     let firstVisible = null;
     items.forEach(function (item) {
       const show = subject === 'all' || item.dataset.subject === subject;
@@ -73,7 +73,7 @@ watchedBtn.addEventListener('click', function () {
       if (show && !firstVisible) firstVisible = item;
     });
  
-    // if the video on screen was filtered out, play the first one left
+   
     if (current.style.display === 'none' && firstVisible) {
       playVideo(firstVisible);
     }
@@ -82,6 +82,21 @@ watchedBtn.addEventListener('click', function () {
 
 
 
+// notes 
+function updateWordCount() {
+  const text = notes.value.trim();
+  const words = text === '' ? 0 : text.split(/\s+/).length;
+  wordCount.textContent = words + (words === 1 ? ' word' : ' words');
+}
+ 
+notes.addEventListener('input', updateWordCount);
+ 
+clearBtn.addEventListener('click', function () {
+  if (notes.value.trim() !== '' && !confirm('Clear all your notes?')) return;
+  notes.value = '';
+  updateWordCount();
+  notes.focus();
+});
 
 
 
