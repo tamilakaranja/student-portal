@@ -15,3 +15,17 @@ const quiz = {
     { question: 'What is 1/4 of 20?', options: ['5', '4', '10', '80'], answer: 0 }
   ]
 };
+
+// element ids 
+
+const quizScreen = document.getElementById('quiz-screen');
+const resultScreen = document.getElementById('result-screen');
+const subjectEl = document.getElementById('quiz-subject');
+const timerEl = document.getElementById('quiz-timer');
+const progressFill = document.getElementById('progress-fill');
+const countEl = document.getElementById('question-count');
+const questionEl = document.getElementById('question-text');
+const optionsBox = document.getElementById('options');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const reviewBtn = document.getElementById('review-btn');
