@@ -25,7 +25,8 @@ items.forEach(function (other) { other.classList.remove('is-active'); });
 
 
 // show the YouTube player, or Video coming soon
-  if (id) {
+  const id = item.dataset.youtube;
+  if (id) { 
     videoBox.innerHTML = '';
     const frame = document.createElement('iframe');
     frame.src = 'https://www.youtube.com/embed/' + id + '?rel=0';
@@ -62,18 +63,21 @@ watchedBtn.addEventListener('click', function () {
 
 
 
- filters.forEach(function (other) { other.classList.remove('is-active'); });
+ // subject filters
+filters.forEach(function (button) {
+  button.addEventListener('click', function () {
+    const subject = button.dataset.subject;
+
+    filters.forEach(function (other) { other.classList.remove('is-active'); });
     button.classList.add('is-active');
- 
-   
+
     let firstVisible = null;
     items.forEach(function (item) {
       const show = subject === 'all' || item.dataset.subject === subject;
       item.style.display = show ? '' : 'none';
       if (show && !firstVisible) firstVisible = item;
     });
- 
-   
+
     if (current.style.display === 'none' && firstVisible) {
       playVideo(firstVisible);
     }
@@ -99,5 +103,5 @@ clearBtn.addEventListener('click', function () {
 });
 
 
-
+playVideo(items[0]);
 
