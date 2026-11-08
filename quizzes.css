@@ -85,3 +85,16 @@ body {
   outline: 3px solid #FFC53D;
   outline-offset: 2px;
 }
+
+/* page main content */
+.dashboard {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 48px;
+}
+ 
+.quiz-area,
+.result-card {
+  max-width: 760px;
+  margin: 0 auto;
+}
