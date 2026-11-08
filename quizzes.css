@@ -86,50 +86,11 @@ body {
   outline-offset: 2px;
 }
 
-/* page main content */
-.dashboard {
+/* main page area  */
+
+dashboard {
   max-width: 1240px;
   margin: 0 auto;
   padding: 48px;
 }
  
-.quiz-area,
-.result-card {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-/* JS code  */
-
-.screen-hide {
-  display: none;
-}
-
-
-/* quiz info  */
-
-.quiz-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 14px;
-}
- 
-.quiz-subject {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--maroon);
-}
- 
-.quiz-timer {
-  padding: 6px 16px;
-  border: 1px solid #EADFBD;
-  border-radius: 999px;
-  background: #fff;
-  font-size: 0.875rem;
-  font-weight: 600;
-}
