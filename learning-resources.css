@@ -189,3 +189,13 @@ body {
   border-left: 22px solid var(--cream);
 }
 
+/* Video subject  */
+video-subject {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--maroon);
+}
+
