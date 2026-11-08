@@ -168,3 +168,50 @@ body {
   line-height: 1.3;
 }
    
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 64px;
+  margin-bottom: 14px;
+  padding: 0 20px;
+  border: 1.5px solid #E3D6AE;
+  border-radius: 20px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1.125rem;
+  text-align: left;
+  cursor: pointer;
+}
+ 
+.option:hover {
+  border-color: var(--maroon);
+}
+ 
+.option-letter {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #F6EBD0;
+  color: var(--maroon);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+ 
+/* The chosen answer */
+.option.selected {
+  border: 2.5px solid var(--maroon);
+  background: #FFF6E3;
+}
+ 
+.option.selected .option-letter {
+  background: var(--maroon);
+  color: var(--cream);
+}
