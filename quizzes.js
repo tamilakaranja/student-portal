@@ -33,11 +33,13 @@ const reviewBtn = document.getElementById('review-btn');
 
 const total = quiz.questions.length;
 const totalSeconds = quiz.minutes * 60;
-let current = 0;                 
-let answers = [];                
-let remaining = totalSeconds;    
-let timerId = null;
-let reviewing = false;
+let current = 0;
+let answers = [];
+let secondsLeft = totalSeconds;
+
+function formatTime(seconds) {
+  return Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2, '0');
+}
 
 
 function showQuestion() {
