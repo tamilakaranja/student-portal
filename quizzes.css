@@ -121,3 +121,9 @@ dashboard {
   font-weight: 500;
   text-decoration: none;
 }
+
+/* quizes already done  */
+.start-btn-outline {
+  background: #fff;
+  color: var(--maroon);
+}
