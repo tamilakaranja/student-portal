@@ -194,3 +194,46 @@ body {
   text-transform: uppercase;
   color: var(--maroon);
 }
+
+/* Colored button  */
+
+.quiz-status {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+ 
+.status-new {
+  background: #FFF1C9;
+  color: #6B4200;
+}
+ 
+.status-done {
+  background: #DDF5E6;
+  color: #14532D;
+}
+ 
+.quiz-card h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+ 
+.quiz-details {
+  font-size: 14px;
+  color: var(--muted);
+}
+ 
+.quiz-result {
+  min-height: 24px;
+  margin: 10px 0 18px;
+  font-size: 14px;
+  color: var(--muted);
+}
+ 
+
+.quiz-card .start-btn {
+  margin-top: auto;
+}
+ 
