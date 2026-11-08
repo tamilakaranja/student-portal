@@ -98,3 +98,9 @@ body {
   max-width: 760px;
   margin: 0 auto;
 }
+
+/* JS code  */
+
+.screen-hide {
+  display: none;
+}
