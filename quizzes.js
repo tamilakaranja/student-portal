@@ -67,3 +67,17 @@ function pickAnswer(index) {
   answers[current] = index;
   showQuestion();
 }
+
+prevBtn.addEventListener('click', function () {
+  current--;
+  showQuestion();
+});
+
+nextBtn.addEventListener('click', function () {
+  if (current < total - 1) {
+    current++;
+    showQuestion();
+  } else {
+    finishQuiz();
+  }
+});
