@@ -273,3 +273,13 @@ body {
   opacity: 0.45;
   cursor: not-allowed;
 }
+
+/* result screen  */
+
+.result-card {
+  padding: 44px 32px;
+  border: 1px solid #EADFBD;
+  border-radius: 28px;
+  background: #fff;
+  text-align: center;
+}
