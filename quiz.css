@@ -215,3 +215,61 @@ body {
   background: var(--maroon);
   color: var(--cream);
 }
+
+/* right and wrong answers  */
+
+.option.correct {
+  border: 2.5px solid #14532D;
+  background: #DDF5E6;
+}
+ 
+.option.correct .option-letter {
+  background: #14532D;
+  color: #fff;
+}
+ 
+.option.wrong {
+  border: 2.5px solid #8A1C2B;
+  background: #FBE3E6;
+}
+ 
+.option.wrong .option-letter {
+  background: #8A1C2B;
+  color: #fff;
+}
+ 
+/* submit buttons  */
+
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+}
+ 
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 28px;
+  border: 1.5px solid var(--maroon);
+  border-radius: 999px;
+  background: var(--maroon);
+  color: var(--cream);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+.nav-btn-outline {
+  background: #fff;
+  color: var(--maroon);
+}
+ 
+.nav-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
