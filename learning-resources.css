@@ -265,3 +265,17 @@ video-subject {
   line-height: 1.5;
   resize: vertical;
 }
+
+/* clear button  */
+.clear-btn {
+  min-height: 44px;
+  padding: 0 24px;
+  border: 1.5px solid var(--maroon);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--maroon);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
