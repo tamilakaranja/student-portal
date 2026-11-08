@@ -279,3 +279,40 @@ video-subject {
   font-weight: 500;
   cursor: pointer;
 }
+
+/* up next section  */
+.playlist-card .card-sub {
+  margin-bottom: 14px;
+}
+ 
+.video-item {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 14px 18px;
+  border: 1.5px solid transparent;
+  border-radius: 20px;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.video-item.is-active {
+  border-color: #E3D6AE;
+  background: #FFF6E3;
+}
+ 
+.video-name {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+}
+ 
+.video-content {
+  display: block;
+  margin-top: 2px;
+  font-size: 14px;
+  color: var(--muted);
+}

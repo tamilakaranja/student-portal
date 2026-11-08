@@ -90,7 +90,7 @@ cursor: pointer;
   border-radius: 999px;
   background: white;
   font: inherit;
-  color: var(--field);
+  color: var(--ink);
 }
 
 .forms input:focus-visible {
