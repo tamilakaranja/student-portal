@@ -46,3 +46,24 @@ function showQuestion() {
   questionEl.textContent = q.question;
   countEl.textContent = 'Question ' + (current + 1) + ' of ' + total;
   progressFill.style.width = ((current + 1) / total * 100) + '%';
+ optionsBox.textContent = '';
+  q.options.forEach(function (text, index) {
+    const tile = document.createElement('button');
+    tile.type = 'button';
+    tile.className = 'option';
+    tile.innerHTML = '<span class="option-letter">' + 'ABCD'[index] + '</span>' + text;
+
+    if (answers[current] === index) tile.classList.add('selected');
+    tile.addEventListener('click', function () { pickAnswer(index); });
+
+    optionsBox.appendChild(tile);
+  });
+
+  prevBtn.disabled = current === 0;
+  nextBtn.textContent = current === total - 1 ? 'Finish quiz' : 'Next question';
+}
+
+function pickAnswer(index) {
+  answers[current] = index;
+  showQuestion();
+}
