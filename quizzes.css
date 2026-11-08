@@ -106,3 +106,18 @@ dashboard {
   text-decoration: none;
 }
  
+/* Buttons  */
+.start-btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 44px;
+  padding: 0 24px;
+  border: 1.5px solid var(--maroon);
+  border-radius: 999px;
+  background: var(--maroon);
+  color: var(--cream);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
