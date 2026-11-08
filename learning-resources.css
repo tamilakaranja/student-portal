@@ -227,4 +227,15 @@ video-subject {
   cursor: pointer;
 }
 
-
+/* After clicked adds is watched  */
+.watched-btn.is-watched {
+  border-color: #14532D;
+  background: #DDF5E6;
+  color: #14532D;
+}
+ 
+.video-details {
+  margin-top: 4px;
+  font-size: 15px;
+  color: var(--muted);
+}
