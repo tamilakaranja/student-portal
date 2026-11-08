@@ -170,4 +170,22 @@ body {
   color: var(--cream);
   overflow: hidden;
 }
+/* play button  */
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--maroon);
+  font-size: 0;
+}
+.play::before {
+  content: "";
+  margin-left: 6px;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 22px solid var(--cream);
+}
 
