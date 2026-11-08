@@ -166,7 +166,8 @@ body {
   gap: 14px;
   aspect-ratio: 16 / 9;
   border-radius: 24px;
-  background: #2B1A1D;
+  background: var(--maroon);
   color: var(--cream);
   overflow: hidden;
 }
+
