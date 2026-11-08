@@ -126,3 +126,17 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+
+/* video layout  */
+.videos-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+ 
+.videos-main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
