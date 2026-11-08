@@ -140,3 +140,19 @@ body {
   flex-direction: column;
   gap: 28px;
 }
+
+/* video card  */
+.video-card,
+.notes-card,
+.playlist-card {
+  padding: 32px;
+  border: 1px solid #EADFBD;
+  border-radius: 28px;
+  background: #fff;
+}
+ 
+.card-sub {
+  margin-top: 2px;
+  font-size: 14px;
+  color: var(--muted);
+}
