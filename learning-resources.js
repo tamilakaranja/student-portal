@@ -10,3 +10,24 @@ const watchedBtn = document.getElementById('watched-btn');
 const notes = document.getElementById('notes');
 const wordCount = document.getElementById('word-count');
 const clearBtn = document.getElementById('clear-notes');
+
+const comingSoon = videoBox.innerHTML;
+ 
+let current = null;   
+function playVideo(item) {
+  current = item;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
