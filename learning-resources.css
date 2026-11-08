@@ -213,3 +213,16 @@ video-subject {
   font-weight: 600;
 }
 
+/* watched button  */
+.watched-btn {
+  min-height: 44px;
+  padding: 0 24px;
+  border: 1.5px solid var(--maroon);
+  border-radius: 999px;
+  background: var(--maroon);
+  color: var(--cream);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
