@@ -133,3 +133,24 @@ body {
   font-size: 0.875rem;
   font-weight: 600;
 }
+
+
+/* progress bar  */
+
+
+
+.progress {
+  height: 12px;
+  border-radius: 6px;
+  background: #E7DDBA;
+}
+
+.progress-content {
+  width: 10%;
+  height: 12px;
+  border-radius: 6px;
+  background: var(--maroon);
+  transition: width 0.3s ease;
+}
+
+   
