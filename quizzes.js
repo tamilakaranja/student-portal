@@ -87,3 +87,26 @@ function tick() {
   timerEl.textContent = formatTime(secondsLeft) + ' left';
   if (secondsLeft <= 0) finishQuiz();
 }
+
+function finishQuiz() {
+  clearInterval(timer);
+
+  let correct = 0;
+  quiz.questions.forEach(function (q, i) {
+    if (answers[i] === q.answer) correct++;
+  });
+  const percent = Math.round(correct / total * 100);
+
+  document.getElementById('score-ring').style.setProperty('--score', percent);
+  document.getElementById('score-text').textContent = correct + '/' + total;
+  document.getElementById('score-percent').textContent = percent + '%';
+  document.getElementById('result-heading').textContent = percent >= 50 ? 'Great work!' : 'Keep practising!';
+  document.getElementById('result-message').textContent =
+    'You got ' + correct + ' out of ' + total + ' questions right.';
+  document.getElementById('fact-correct').textContent = correct;
+  document.getElementById('fact-review').textContent = total - correct;
+  document.getElementById('fact-time').textContent = formatTime(totalSeconds - secondsLeft);
+
+  quizScreen.classList.add('screen-hide');
+  resultScreen.classList.remove('screen-hide');
+}
