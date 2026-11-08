@@ -162,3 +162,20 @@ body {
   background: var(--cream);
   color: var(--ink);
 }
+
+/* quiz cards  */
+.quiz-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+ 
+.quiz-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 28px;
+  border: 1px solid #EADFBD;
+  border-radius: 28px;
+  background: #fff;
+}
