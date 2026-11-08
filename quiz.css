@@ -104,3 +104,23 @@ body {
 .screen-hide {
   display: none;
 }
+
+/* subject  */
+
+
+.quiz-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+ 
+.quiz-subject {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--maroon);
+}
