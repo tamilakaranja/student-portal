@@ -22,10 +22,11 @@ body {
  color: var(--ink);
  background: var(--maroon);
   min-height: 100vh;
- padding: 20px;
+padding: 20px calc(var(--gap) + 6vw);
  display: flex;
  align-items: center;
- justify-content: center;
+  justify-content: space-between;
+   gap: 40px;
 }
 
 /* bg photo  */
