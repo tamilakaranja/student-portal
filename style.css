@@ -24,4 +24,16 @@ body {
  justify-content: center;
 }
 
+/* bg photo  */
+.bg-photo {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          
+  object-position: 75% 0%;    
+  filter: blur(4px);        
+  transform: translateY(4vh) scale(1.1);  
+}
 
