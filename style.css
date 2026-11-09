@@ -20,7 +20,7 @@ body {
  margin: 0;
  font-family: var(--font);
  color: var(--ink);
- background: var(--cream);
+ background: black;
   min-height: 100vh;
 padding: 20px calc(var(--gap) + 6vw);
  display: flex;
@@ -193,3 +193,21 @@ input[type="password"]:focus {
      .hero-text { display: none; }
      .card { width: 100%; }
    }
+
+
+   button {
+  margin-top: 6px;
+  padding: 14px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--maroon);
+  background: var(--cream);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ 
+button:active {
+  transform: scale(0.98);
+}
