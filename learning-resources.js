@@ -10,7 +10,6 @@ const watchedBtn = document.getElementById('watched-btn');
 const notes = document.getElementById('notes');
 const wordCount = document.getElementById('word-count');
 const clearBtn = document.getElementById('clear-notes');
-
 const comingSoon = videoBox.innerHTML;
  
 let current = null;   
@@ -52,7 +51,7 @@ items.forEach(function (item) {
 
 function updateWatchedButton() {
   const isWatched = current.classList.contains('watched');
-  watchedBtn.textContent = isWatched ? 'Watched \u2713' : 'Mark as watched';
+  watchedBtn.textContent = isWatched ? 'Watched' : 'Mark as watched';
   watchedBtn.classList.toggle('is-watched', isWatched);
 }
  
