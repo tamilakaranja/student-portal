@@ -56,3 +56,21 @@ input[type="radio"] {
   display: none;
 }
 
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 5px;
+  margin-bottom: 22px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 999px;
+}
+
+.tabs label {
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: #e9d8da;
+  border-radius: 999px;
+  cursor: pointer;
+}
