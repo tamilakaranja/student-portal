@@ -91,4 +91,12 @@ form {
   display: none;
 }
  
+/* code for changing showing different tabs  */
+#register:checked ~ .login-form {
+  display: none;
+}
+ 
+#register:checked ~ .register-form {
+  display: flex;
+}
 
