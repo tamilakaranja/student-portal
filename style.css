@@ -6,7 +6,8 @@
   --error: #8A1C2B;
   --success: #14532D;
   --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
-   --gap: 24px;     
+   
+  --gap: 24px;     
   --bleed: 12px;    
   --round: 28px;
 }
@@ -40,6 +41,24 @@ body {
   clip-path: inset(var(--bleed) round var(--round));
 }
 
+/* blurry corners  */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -60px;
+  z-index: -2;
+  background: url("Images/portal-landing.png") center / cover no-repeat;
+  filter: blur(40px) saturate(1.5) brightness(2.3);
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: var(--gap);
+  z-index: -1;
+  border-radius: var(--round);
+  background: rgba(30, 10, 14, 0.25);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
 
 .card {
   width: 100%;
