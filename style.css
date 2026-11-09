@@ -80,3 +80,15 @@ input[type="radio"] {
   background: var(--maroon);
   color: var(--cream);
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+ 
+.register-form {
+  display: none;
+}
+ 
+
