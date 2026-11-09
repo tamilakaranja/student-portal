@@ -37,3 +37,17 @@ body {
   transform: translateY(4vh) scale(1.1);  
 }
 
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 26px;
+  color: var(--cream);
+  background: rgba(38, 12, 16, 0.62);
+  border: 1px solid rgba(255, 251, 235, 0.22);
+  border-radius: 22px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
