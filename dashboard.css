@@ -192,3 +192,5 @@ body {
     padding: 28px 24px;
   }
 }
+
+[hidden] { display: none !important; }
