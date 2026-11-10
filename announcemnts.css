@@ -98,3 +98,26 @@ body {
   font-weight: 600;
   text-decoration: none;
 }
+
+
+/* main page  */
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8px 16px 64px;
+}
+ 
+.page-title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #722F37;
+}
+ 
+.page-subtitle {
+  margin: 8px 0 28px;
+  font-size: 16px;
+  color: #5E4F54;
+}
