@@ -15,7 +15,24 @@ function showStudent(info) {
 }
 
 // Next up box + "due this week" card, using the student's real assignments
+// My Performance card: average of all quiz and assignment scores
+function showAverage() {
+  const quizResults = JSON.parse(localStorage.getItem("quizResults_" + student.studentId)) || [];
+  const assignmentResults = JSON.parse(localStorage.getItem("assignmentResults_" + student.studentId)) || [];
+  const all = quizResults.concat(assignmentResults);
+  const text = document.getElementById("averageGrade");
+
+  if (all.length === 0) {
+    text.textContent = "No results yet";
+    return;
+  }
+
+  const total = all.reduce(function (sum, r) { return sum + r.score; }, 0);
+  text.textContent = "Average grade " + Math.round(total / all.length) + "%";
+}
+
 function showAssignmentInfo() {
+  showAverage();
   const results = JSON.parse(localStorage.getItem("assignmentResults_" + student.studentId)) || [];
   const doneIds = results.map(function (r) { return r.id; });
   const now = new Date();
