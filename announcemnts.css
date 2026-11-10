@@ -285,3 +285,18 @@ announcements {
   color: #3F3135;
 }
  
+/* readmore  */
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #722F37;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+ 
+.read-more:hover {
+  text-decoration: underline;
+}
