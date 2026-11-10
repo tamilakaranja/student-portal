@@ -156,3 +156,60 @@ body {
     cursor: pointer;
 }
 
+
+/* performance overview  */
+.overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.performance-card {
+    background: var(--white);
+    padding: 28px;
+    border-radius: var(--radius);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    border-bottom: 4px solid var(--forestgreen);
+    transition: 0.3s ease;
+}
+
+.performance-card:hover {
+    transform: translateY(-5px);
+}
+
+.performance-card p {
+    color: var(--grey);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.performance-card h2 {
+    color: var(--forestgreen);
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.performance-card span {
+    color: var(--grey);
+    font-size: 12px;
+}
+
+
+
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    color: var(--forestgreen);
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    color: var(--grey);
+    font-size: 14px;
+}
+
