@@ -237,3 +237,41 @@ body {
   margin-top: auto;
 }
  
+
+/* start button  */
+.quiz-card a,
+.quiz-banner a {
+  display: inline-block;
+  width: fit-content;
+  align-self: flex-start;
+  margin-top: 10px;
+  padding: 6px 18px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background: var(--maroon);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.quiz-card a:hover,
+.quiz-banner a:hover {
+  background: var(--cream);
+  color: black;
+  transform: translateY(-1px);
+}
+
+.quiz-card a:active,
+.quiz-banner a:active {
+  transform: scale(0.97);
+}
+
+.quiz-card a:focus-visible,
+.quiz-banner a:focus-visible {
+  outline: 3px solid #F2B632;
+  outline-offset: 2px;
+}

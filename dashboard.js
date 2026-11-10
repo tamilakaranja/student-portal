@@ -26,6 +26,7 @@ if (student) {
     .then(function (response) { return response.json(); })
     .then(function (result) {
       if (result.ok) {
+         student.studentId = result.studentId;
         student.name = result.name;
         student.grade = result.grade;
         student.term = result.term;

@@ -1,4 +1,5 @@
-const quiz = {
+const quizzes = {
+  fractions: {
   subject: 'Mathematics',
   title: 'Fractions practice test',
   minutes: 10,
@@ -13,9 +14,51 @@ const quiz = {
     { question: 'What is 2/5 + 1/5?', options: ['3/10', '2/5', '3/5', '1/5'], answer: 2 },
     { question: '4/4 is equal to which number?', options: ['0', '4', '1/4', '1'], answer: 3 },
     { question: 'What is 1/4 of 20?', options: ['5', '4', '10', '80'], answer: 0 }
-  ]
+   ]
+  },
+
+  science: {
+    subject: 'Science',
+    title: 'Living things and the Earth',
+    minutes: 10,
+    questions: [
+      { question: 'Which gas do plants take in from the air to make food?', options: ['Oxygen', 'Carbon dioxide', 'Nitrogen', 'Hydrogen'], answer: 1 },
+      { question: 'At what temperature does water boil, in degrees Celsius?', options: ['50', '90', '100', '120'], answer: 2 },
+      { question: 'Which part of a plant takes in water from the soil?', options: ['Leaves', 'Stem', 'Roots', 'Flower'], answer: 2 },
+      { question: 'Which planet is closest to the Sun?', options: ['Venus', 'Earth', 'Mercury', 'Mars'], answer: 2 },
+      { question: 'What is it called when liquid water turns into a gas?', options: ['Condensation', 'Evaporation', 'Freezing', 'Melting'], answer: 1 }
+     ]
+  },
+
+  english: {
+    subject: 'English',
+    title: 'Grammar and vocabulary',
+    minutes: 10,
+    questions: [
+      { question: 'Which of these words is a noun?', options: ['Run', 'Happiness', 'Quickly', 'Beautiful'], answer: 1 },
+      { question: 'Which sentence is correct?', options: ['She go to school every day.', 'She goes to school every day.', 'She going to school every day.', 'She gone to school every day.'], answer: 1 },
+      { question: 'What is the plural of "child"?', options: ['Childs', 'Childes', 'Children', 'Childrens'], answer: 2 },
+      { question: 'Which word means the opposite of "ancient"?', options: ['Old', 'Modern', 'Large', 'Quiet'], answer: 1 },
+      { question: 'Which punctuation mark ends a question?', options: ['.', ',', '?', '!'], answer: 2 }
+    ]
+  },
+
+  socialstudies: {
+    subject: 'Social Studies',
+    title: 'Kenya and the world',
+    minutes: 10,
+    questions: [
+      { question: 'What is the capital city of Kenya?', options: ['Mombasa', 'Nairobi', 'Kisumu', 'Nakuru'], answer: 1 },
+      { question: 'Which is the largest lake in Africa?', options: ['Lake Victoria', 'Lake Turkana', 'Lake Naivasha', 'Lake Nakuru'], answer: 0 },
+      { question: 'In which year did Kenya gain independence?', options: ['1957', '1960', '1963', '1970'], answer: 2 },
+      { question: 'Which is the highest mountain in Kenya?', options: ['Mount Kilimanjaro', 'Mount Kenya', 'Mount Elgon', 'Mount Longonot'], answer: 1 },
+      { question: 'Which imaginary line divides the Earth into the Northern and Southern Hemispheres?', options: ['Prime Meridian', 'Equator', 'Tropic of Cancer', 'International Date Line'], answer: 1 }
+    ]
+  }
 };
 
+const quizId = new URLSearchParams(window.location.search).get('id');
+const quiz = quizzes[quizId] || quizzes.fractions;
 // element ids 
 
 const quizScreen = document.getElementById('quiz-screen');
