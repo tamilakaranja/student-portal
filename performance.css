@@ -244,3 +244,45 @@ body {
     font-size: 14px;
 }
 
+/* achivements  */
+
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.achievement-card {
+    padding: 25px;
+    background: var(--cream);
+    border-radius: 15px;
+    border: 1px solid var(--lightcream);
+    transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-4px);
+    background: #fff9eb;
+}
+
+.achievement-card h3 {
+    color: var(--forestgreen);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.achievement-card p {
+    color: var(--grey);
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.achievement-status {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--lightcream);
+    color: var(--burgundy);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
