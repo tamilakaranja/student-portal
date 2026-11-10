@@ -48,7 +48,7 @@ body::before {
   position: fixed;
   inset: -60px;
   z-index: -2;
-  background: url("images/student-bg.jpg") center / cover no-repeat;
+  background: url("Images/student-bg.jpg") center / cover no-repeat;
   filter: blur(40px) saturate(1.5) brightness(2.3);
 }
 body::after {
