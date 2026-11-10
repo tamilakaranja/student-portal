@@ -1,5 +1,6 @@
 :root {
   --cream: #FFFBEB;
+  --lightcream: #fff8ddda;
   --maroon: #722F37;
   --ink: #2B1A1D;
   --muted: #5E4B4E;
@@ -114,9 +115,44 @@ body {
     align-items: center;
     gap: 25px;
     padding: 35px;
-    background: var(--white);
+    background: var(--cream);
     border-radius: var(--radius);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
 }
 
+.heading {
+    color: var(--burgundy);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.performance-heading h1 {
+    font-family: Georgia, serif;
+    color: var(--forestgreen);
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.term-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 160px;
+}
+
+.term-filter label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.term-filter select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: var(--cream);
+    font-size: 14px;
+    cursor: pointer;
+}
 
