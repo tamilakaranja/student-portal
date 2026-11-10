@@ -85,3 +85,16 @@ body {
   outline: 3px solid #FFC53D;
   outline-offset: 2px;
 }
+
+/* backlink  */
+.back-link {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 0;
+  color: #722F37;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
