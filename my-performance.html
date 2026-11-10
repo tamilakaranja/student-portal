@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- topbar  -->
+     
+     <header class="topbar">
+
+ <div class="dashboard-logo">
+            <img src="Images/logo.png" alt="School logo">
+            <div>  
+            <div class="school-name">St Genevieve Academy</div>
+            <div class="sub-name">Students portal</div>
+            </div>
+</div>
+        <!-- actions -->
+<div class="top-bar-actions"> 
+<a href="profile.html">My profile</a>
+<a href="index.html">Signout</a>
+</div>
+</header>
+
+ <main class="dashboard">
+        <!-- back to dashboard  -->
+  <a href="dashboard.html" class="back-link"> Back to dashboard</a>
+
+<!-- page heading -->
+  <main class="performance-box">
+
+        <section class="performance-heading">
+            <div>
+                <p class="heading">STUDENT PORTAL</p>
+                <h1>My Performance</h1>
+                <p>Track your progress, celebrate your achievements and see how far you have come.</p>
+            </div>
+
+            <div class="term-filter">
+                <label for="term">Academic term</label>
+                <select id="term">
+                    <option value="Term 1">Term 1</option>
+                    <option value="Term 2">Term 2</option>
+                    <option value="Term 3">Term 3</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- perfomance overview  -->
+          <section class="overview">
+
+            <div class="performance-card">
+                <p>Overall Average</p>
+                <h2 id="overallAverage">--%</h2>
+                <span>Based on your recorded results</span>
+            </div>
+
+            <div class="performance-card">
+                <p>Assignments Completed</p>
+                <h2 id="assignmentsCompleted">--</h2>
+                <span>Your completed assignments</span>
+            </div>
+
+            <div class="performance-card">
+                <p>Quizzes Completed</p>
+                <h2 id="quizzesCompleted">--</h2>
+                <span>Your completed quizzes</span>
+            </div>
+
+        </section>
+
+        <!-- subject performance  -->
+        <section class="subject-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Subject Performance</h2>
+                    <p>See how you are performing in each subject.</p>
+                </div>
+            </div>
+
+            <div class="subject-list" id="subjectList">
+
+                <div class="subject-row">
+                    <div class="subject-details">
+                        <h3>Mathematics</h3>
+                        <span>%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="subject-row">
+                    <div class="subject-details">
+                        <h3>English</h3>
+                        <span>%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="subject-row">
+                    <div class="subject-details">
+                        <h3>Science</h3>
+                        <span>%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="subject-row">
+                    <div class="subject-details">
+                        <h3>Kiswahili</h3>
+                        <span>%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- your perfromance over time  -->
+
+   <section class="progress-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Performance Over Time</h2>
+                    <p>Follow your academic progress throughout the term.</p>
+                </div>
+            </div>
+
+            <div class="chart-box" id="performanceChart">
+                <p>Your performance chart will appear here once results are available.</p>
+            </div>
+
+        </section>
+
+
+        <!-- achievements section  -->
+
+         <section class="achievements-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>My Achievements</h2>
+                    <p>Recognising your learning milestones.</p>
+                </div>
+            </div>
+
+            <div class="achievement-list">
+
+                <div class="achievement-card">
+                    <h3>Consistent Learner</h3>
+                    <p>Complete assignments consistently and stay on track.</p>
+                    <span class="achievement-status">In progress</span>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Quiz Champion</h3>
+                    <p>Achieve excellent results in your quizzes.</p>
+                    <span class="achievement-status">In progress</span>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Academic Excellence</h3>
+                    <p>Maintain strong performance across your subjects.</p>
+                    <span class="achievement-status">In progress</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
