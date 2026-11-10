@@ -9,7 +9,7 @@ if (!student || !student.studentId) {
 
 // Get this student's storage keys
 const quizKey = 'quizResults_' + student.studentId;
-const assignmentKey = 'completedAssignments_' + student.studentId;
+const assignmentKey = 'assignmentResults_' + student.studentId;
 
 // Get this student's quiz results
 const quizResults = JSON.parse(localStorage.getItem(quizKey)) || [];
@@ -20,14 +20,17 @@ const completedAssignments = JSON.parse(localStorage.getItem(assignmentKey)) || 
 
 // average 
 
+// quizzes and assignments together
+const allResults = quizResults.concat(completedAssignments);
+
 let average = 0;
 
-if (quizResults.length > 0) {
-    const totalScores = quizResults.reduce(function (sum, quiz) {
-        return sum + quiz.score;
+if (allResults.length > 0) {
+    const totalScores = allResults.reduce(function (sum, item) {
+        return sum + item.score;
     }, 0);
 
-    average = Math.round(totalScores / quizResults.length);
+    average = Math.round(totalScores / allResults.length);
 }
 
 document.getElementById('overallAverage').textContent = average + '%';
@@ -74,7 +77,7 @@ const subjectList = document.getElementById('subjectList');
 // Group quiz results by subject
 const subjectScores = {};
 
-quizResults.forEach(function (quiz) {
+allResults.forEach(function (quiz) {
 
     if (!subjectScores[quiz.subject]) {
         subjectScores[quiz.subject] = [];
