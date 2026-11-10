@@ -1,0 +1,238 @@
+:root {
+  --cream: #FFFBEB;
+  --lightcream: #fff8ddda;
+  --maroon: #722F37;
+  --ink: #2B1A1D;
+  --muted: #5E4B4E;
+  --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--cream);
+}
+
+
+/* top bar  */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 14px 48px;
+  background: var(--maroon);
+  color: var(--cream);
+}
+
+/* logo  */
+.dashboard-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dashboard-logo img {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: var(--cream);
+}
+ /* school name and subname  */
+.school-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.sub-name {
+  font-size: 0.8125rem;
+  color: #F3E8D6;
+}
+
+/* actions  */
+.top-bar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.top-bar-actions a,
+.assignments-due a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.top-bar-actions a:first-child,
+.assignments-due a {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.top-bar-actions a:last-child {
+  border: 1.5px solid var(--cream);
+  color: var(--cream);
+}
+
+/* main content  */
+
+.profile-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+
+.page-heading {
+    margin-bottom: 30px;
+}
+
+.page-heading h1 {
+    font-size: 2rem;
+    color: var(--maroon);
+    margin-bottom: 6px;
+}
+
+.page-heading p {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+ /* profile overview  */
+.profile-overview {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: var(--lightcream);
+    padding: 30px;
+    border: 1px solid #eadfce;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+/* avatar  */
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--maroon);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cream);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.profile-intro h2 {
+    font-size: 1.4rem;
+    color: var(--ink);
+    margin-bottom: 4px;
+}
+
+.profile-intro p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* status  */
+.status {
+    display: inline-block;
+    background: #e6f0df;
+    color: #3e6337;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* info sections  */
+.profile-section {
+    background: var(--lightcream);
+    padding: 30px;
+    border: 1px solid #eadfce;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e8dccb;
+}
+
+.section-heading h2 {
+    font-size: 1.2rem;
+    color: var(--maroon);
+}
+
+/* info grid  */
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 40px;
+}
+
+.detail-item label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.detail-item p {
+    font-size: 0.95rem;
+    color: var(--ink);
+    font-weight: 500;
+}
+
+/* responsive design  */
+@media (max-width: 650px) {
+
+    .topbar {
+        padding: 15px 20px;
+    }
+
+    .profile-container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .profile-overview {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .profile-avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 23px;
+        flex-shrink: 0;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .profile-section {
+        padding: 22px;
+    }
+
+    .page-heading h1 {
+        font-size: 1.6rem;
+    }
+}
