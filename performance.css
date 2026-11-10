@@ -286,3 +286,59 @@ body {
     font-size: 11px;
     font-weight: 700;
 }
+
+
+/* Reponsive design  */
+
+@media (max-width: 800px) {
+
+    .overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .achievement-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .performance-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .topbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top-bar-actions {
+        gap: 15px;
+    }
+
+    .dashboard {
+        width: 92%;
+    }
+
+    .overview {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-list {
+        grid-template-columns: 1fr;
+    }
+
+    .performance-heading,
+    .subject-section,
+    .progress-section,
+    .achievements-section {
+        padding: 22px;
+    }
+
+    .performance-heading h1 {
+        font-size: 30px;
+    }
+
+}

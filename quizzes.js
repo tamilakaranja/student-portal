@@ -98,6 +98,19 @@ function finishQuiz() {
     if (answers[i] === q.answer) correct++;
   });
   const percent = Math.round(correct / total * 100);
+  // Save quiz results
+const quizResults = JSON.parse(localStorage.getItem('quizResults')) || [];
+
+quizResults.push({
+    subject: quiz.subject,
+    title: quiz.title,
+    score: percent,
+    correct: correct,
+    total: total,
+    date: new Date().toLocaleDateString()
+});
+
+localStorage.setItem('quizResults', JSON.stringify(quizResults));
 
   document.getElementById('score-ring').style.setProperty('--score', percent);
   document.getElementById('score-text').textContent = correct + '/' + total;
