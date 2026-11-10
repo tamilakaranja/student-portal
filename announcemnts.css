@@ -1,0 +1,87 @@
+:root {
+  --cream: #FFFBEB;
+  --maroon: #722F37;
+  --ink: #2B1A1D;
+  --muted: #5E4B4E;
+  --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--cream);
+}
+
+/* top bar  */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 14px 48px;
+  background: var(--maroon);
+  color: var(--cream);
+}
+
+/* logo  */
+.dashboard-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dashboard-logo img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--cream);
+}
+/* school name andsubname */
+.school-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.sub-name {
+  font-size: 0.8125rem;
+  color: #F3E8D6;
+}
+/* topbar actions  */
+.top-bar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.top-bar-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.top-bar-actions a:first-child {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.top-bar-actions a:last-child {
+  border: 1.5px solid var(--cream);
+  color: var(--cream);
+}
+
+.top-bar-actions a:focus-visible {
+  outline: 3px solid #FFC53D;
+  outline-offset: 2px;
+}
