@@ -24,73 +24,32 @@
         <!-- actions  -->
            <div class="top-bar-actions">
             <a href="profile.html">My profile</a>
-            <a href="index.html">Sign out</a>
+          <a href="index.html" id="signout">Sign out</a>
         </div>
     </header>
 <main class="dashboard">
     <!-- back to dashboard  -->
   <a href="dashboard.html" class="back-link"> Back to dashboard</a>
-        <h1>Assignments</h1>
+        <h1 id="gradeLabel">Assignments</h1>
     
         <!-- filter buttons  . -->
           <div class="filters">
-            <button type="button" class="all-options" data-filter="all">All</button>
+          <button type="button" class="active" data-filter="all">All</button>
             <button type="button" class="filter" data-filter="to-do">To do</button>
             <button type="button" class="filter" data-filter="submitted">Submitted</button>
             <button type="button" class="filter" data-filter="overdue">Overdue</button>
         </div>
-
+<select id="subjectFilter">
+    <option value="all">All subjects</option>
+</select>
         <!-- assignment list  -->
         
-        <div class="assignment-list">
+    <div class="assignment-list" id="assignmentList"></div>
+<p id="emptyMessage" hidden>
 
-           <!-- mathematics  -->
-            <article class="assignment-card" data-status="todo" data-id="math">
-                <div class="card">
-                    <span class="subject">Mathematics</span>
-                    <span class="status status-soon">Due tomorrow</span>
-                </div>
-                <h2>Worksheet 4</h2>
-                <p class="due"> Due Tuesday, 4:00 pm </p>
-                <p class="details">Complete questions 1 to 10 on fractions and show your working.</p>
-                <a href="#" class="open-btn">Open assignment</a>
-            </article>
+</p>
+</div>
 
-            <!-- english  -->
-        <article class="assignment-card" data-status="todo" data-id="english">
-                <div class="card">
-                    <span class="subject">English</span>
-                    <span class="status status-soon">To do</span>
-                </div>
-                <h2>Composition:My best day</h2>
-                <p class="due"> Due Tuesday, 7:00 pm </p>
-                <p class="details">Write an essay about your favourite day</p>
-                <a href="#" class="open-btn">Open assignment</a>
-            </article>
-
-       <!-- science       -->
-        <article class="assignment-card" data-status="submitted" data-id="science">
-                <div class="card">
-                    <span class="subject">Science</span>
-                    <span class="status status-soon">Submitted</span>
-                </div>
-                <h2>Plant life cycle diagram</h2>
-                <p class="due"> submitted on Monday </p>
-                <p class="details">Label the stages from seed to flowering plant.</p>
-                <a href="#" class="open-btn">Open assignment</a>
-            </article>
-<!-- social studies  -->
-        <article class="assignment-card" data-status="overdue" data-id="socialstudies">
-                <div class="card">
-                    <span class="subject">Social studies</span>
-                    <span class="status status-soon">Overdue</span>
-                </div>
-                <h2>Map of Kenya</h2>
-                <p class="due"> Was due 3 days ago</p>
-                <p class="details">Mark the mmain counties and rivers on the outline map.</p>
-                <a href="#" class="open-btn">Open assignment</a>
-            </article>
-            </div>
             </main>
 
 <!-- assignment poop ups  -->
@@ -112,7 +71,8 @@
 
         <div class="successhide" id="successmsg">
              <h3>Submitted</h3>
-            <p>Your assignment has been submitted!</p>
+           <p id="resultScore"></p>
+<div id="reviewList"></div>
             <button type="button" class="open-btn" id="successClose">Close</button>
 </div>
     </div>
