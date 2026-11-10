@@ -180,3 +180,45 @@ body {
 .btn-readmore:hover {
   background: #F3E9CF;
 }
+
+
+/* filters */
+.filters {
+  display: flex;
+  gap: 4px;
+  margin: 28px 0 16px;
+  padding: 4px;
+  overflow-x: auto;
+  border: 1px solid #E9DFC8;
+  border-radius: 999px;
+  background: #fff;
+}
+ 
+.filter {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #4A3A3E;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+ 
+.filter:hover {
+  background: var(--maroon);
+  color: white;
+}
+ 
+.filter.is-active {
+  background: #722F37;
+  color: #FFF9E6;
+}
+ 
+.count {
+  font-weight: 500;
+  opacity: 0.75;
+}
