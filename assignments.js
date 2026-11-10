@@ -112,11 +112,29 @@ document.addEventListener('keydown', function (event) {
 });
 
 
-// submit shows the confirmation
+// submit and save assignment
 form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  form.classList.add('successhide');
-  successBox.classList.remove('successhide');
+    event.preventDefault();
+
+    const completedAssignments =
+        JSON.parse(localStorage.getItem('completedAssignments')) || [];
+
+    const assignmentTitle = document.getElementById('modaltitle').textContent;
+    const assignmentSubject = document.getElementById('modalsubject').textContent;
+
+    completedAssignments.push({
+        title: assignmentTitle,
+        subject: assignmentSubject,
+        date: new Date().toLocaleDateString()
+    });
+
+    localStorage.setItem(
+        'completedAssignments',
+        JSON.stringify(completedAssignments)
+    );
+
+    form.classList.add('successhide');
+    successBox.classList.remove('successhide');
 });
 
 successCloseBtn.addEventListener('click', closeModal);
