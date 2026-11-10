@@ -351,3 +351,30 @@ body {
     padding: 64px 20px 24px;
   }
  }
+
+
+ [hidden] { display: none !important; }
+
+.filters button.active {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: var(--cream);
+}
+
+#subjectFilter {
+  min-height: 44px;
+  padding: 0 16px;
+  margin-bottom: 24px;
+  border: 1.5px solid #E3D6AE;
+  border-radius: 999px;
+  font: inherit;
+}
+
+.choice { display: block; margin: 6px 0; font-weight: 400; }
+.form-error { color: #8A1C2B; margin-bottom: 12px; }
+
+.review-item { margin-bottom: 18px; }
+.review-question { font-weight: 600; margin-bottom: 6px; }
+.review-option { padding: 8px 12px; border-radius: 12px; margin-bottom: 4px; }
+.review-correct { background: #DDF5E6; color: #14532D; }
+.review-wrong { background: #FBE3E6; color: #8A1C2B; }
