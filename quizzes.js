@@ -98,9 +98,21 @@ function finishQuiz() {
     if (answers[i] === q.answer) correct++;
   });
   const percent = Math.round(correct / total * 100);
-  // Save quiz results
-const quizResults = JSON.parse(localStorage.getItem('quizResults')) || [];
+ // Get the logged-in student
+const student = JSON.parse(sessionStorage.getItem('student'));
 
+if (!student || !student.studentId) {
+    alert('Student session not found. Please log in again.');
+    return;
+}
+
+// Create a separate storage key for each student
+const quizKey = 'quizResults_' + student.studentId;
+
+// Get this student's existing results
+const quizResults = JSON.parse(localStorage.getItem(quizKey)) || [];
+
+// Add the new quiz result
 quizResults.push({
     subject: quiz.subject,
     title: quiz.title,
@@ -110,7 +122,8 @@ quizResults.push({
     date: new Date().toLocaleDateString()
 });
 
-localStorage.setItem('quizResults', JSON.stringify(quizResults));
+// Save results under this student's ID
+localStorage.setItem(quizKey, JSON.stringify(quizResults));
 
   document.getElementById('score-ring').style.setProperty('--score', percent);
   document.getElementById('score-text').textContent = correct + '/' + total;

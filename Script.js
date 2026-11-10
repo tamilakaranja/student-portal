@@ -16,6 +16,7 @@ async function sendToServer(payload) {
 function startSession(data) {
   sessionStorage.setItem("student", JSON.stringify({
     token: data.token,
+     studentId: data.studentId,
     name: data.name,
     grade: data.grade,
     term: data.term,
