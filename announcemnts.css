@@ -300,3 +300,31 @@ announcements {
 .read-more:hover {
   text-decoration: underline;
 }
+
+/* responsive design  */
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 0 16px;
+  }
+ 
+  .top-bar-actions {
+    gap: 16px;
+  }
+ 
+  .school-name {
+    font-size: 14px;
+  }
+ 
+  .page-title {
+    font-size: 32px;
+  }
+ 
+  .pinned {
+    padding: 20px;
+  }
+ 
+  .pinned-title {
+    font-size: 22px;
+  } 
+   }
