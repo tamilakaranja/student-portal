@@ -57,9 +57,10 @@ const quizzes = {
   }
 };
 
-const quizId = new URLSearchParams(window.location.search).get('id');
-const quiz = quizzes[quizId] || quizzes.fractions;
-// element ids 
+const params = new URLSearchParams(window.location.search);
+const quizId = quizzes[params.get('id')] ? params.get('id') : 'fractions';
+const quiz = quizzes[quizId];
+const reviewMode = params.get('review') === '1';   
 
 const quizScreen = document.getElementById('quiz-screen');
 const resultScreen = document.getElementById('result-screen');
@@ -157,6 +158,9 @@ const quizResults = JSON.parse(localStorage.getItem(quizKey)) || [];
 
 // Add the new quiz result
 quizResults.push({
+    id: quizId,
+    answers: quiz.questions.map(function (q, i) { return answers[i] === undefined ? null : answers[i]; }),
+    seconds: totalSeconds - secondsLeft,
     subject: quiz.subject,
     title: quiz.title,
     score: percent,
@@ -178,11 +182,104 @@ localStorage.setItem(quizKey, JSON.stringify(quizResults));
   document.getElementById('fact-review').textContent = total - correct;
   document.getElementById('fact-time').textContent = formatTime(totalSeconds - secondsLeft);
 
+  showReview(quiz.questions.map(function (q, i) { return answers[i] === undefined ? null : answers[i]; }));
+
   quizScreen.classList.add('screen-hide');
   resultScreen.classList.remove('screen-hide');
 }
 
+// the marked review: right answers green, wrong answers red
+function showReview(picked) {
+  const box = document.getElementById('review-list');
+  if (!box) return;
+  box.textContent = '';
+
+  quiz.questions.forEach(function (q, i) {
+    const item = document.createElement('div');
+    item.className = 'review-item';
+
+    const heading = document.createElement('p');
+    heading.className = 'review-question';
+    heading.textContent = (i + 1) + '. ' + q.question + (picked[i] === null ? '  (not answered)' : '');
+    item.appendChild(heading);
+
+    q.options.forEach(function (optionText, index) {
+      const row = document.createElement('div');
+      row.className = 'review-option';
+      let note = '';
+
+      if (index === q.answer) {
+        row.classList.add('review-correct');
+        note = picked[i] === index ? '  (your answer - correct)' : '  (correct answer)';
+      } else if (picked[i] === index) {
+        row.classList.add('review-wrong');
+        note = '  (your answer)';
+      }
+
+      row.textContent = 'ABCD'[index] + '. ' + optionText + note;
+      item.appendChild(row);
+    });
+
+    box.appendChild(item);
+  });
+}
+
+// "View results": show the student's last saved attempt, without starting the quiz
+function showSavedResult() {
+  const me = JSON.parse(sessionStorage.getItem('student'));
+  if (!me || !me.studentId) {
+    window.location.replace('index.html');
+    return;
+  }
+
+  const tries = (JSON.parse(localStorage.getItem('quizResults_' + me.studentId)) || []).filter(function (r) {
+    return r.id === quizId && r.answers;
+  });
+  if (tries.length === 0) {
+    window.location.replace('quizzes.html');
+    return;
+  }
+  const last = tries[tries.length - 1];
+
+  document.getElementById('score-ring').style.setProperty('--score', last.score);
+  document.getElementById('score-text').textContent = last.correct + '/' + last.total;
+  document.getElementById('score-percent').textContent = last.score + '%';
+  document.getElementById('result-heading').textContent = last.score >= 50 ? 'Great work!' : 'Keep practising!';
+  document.getElementById('result-message').textContent =
+    'You got ' + last.correct + ' out of ' + last.total + ' questions right.';
+  document.getElementById('fact-correct').textContent = last.correct;
+  document.getElementById('fact-review').textContent = last.total - last.correct;
+  document.getElementById('fact-time').textContent = formatTime(last.seconds || 0);
+
+  showReview(last.answers);
+
+  quizScreen.classList.add('screen-hide');
+  resultScreen.classList.remove('screen-hide');
+}
+
+// the "Redo quiz" button starts this quiz again
+const redoBtn = document.getElementById('redo-btn');
+if (redoBtn) {
+  redoBtn.addEventListener('click', function () {
+    window.location.href = 'quiz.html?id=' + quizId;
+  });
+}
+
+// the "review" button scrolls down to the marked answers
+if (reviewBtn) {
+  reviewBtn.addEventListener('click', function () {
+    const box = document.getElementById('review-list');
+    if (box) box.scrollIntoView({ behavior: 'smooth' });
+  });
+}
+
 subjectEl.textContent = quiz.subject + ' - ' + quiz.title;
-timerEl.textContent = formatTime(secondsLeft) + ' left';
-showQuestion();
-const timer = setInterval(tick, 1000);
+
+let timer;
+if (reviewMode) {
+  showSavedResult();
+} else {
+  timerEl.textContent = formatTime(secondsLeft) + ' left';
+  showQuestion();
+  timer = setInterval(tick, 1000);
+}

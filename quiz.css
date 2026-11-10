@@ -361,3 +361,10 @@ body {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+#review-list { margin: 24px 0; text-align: left; }
+.review-item { margin-bottom: 18px; }
+.review-question { font-weight: 600; margin-bottom: 6px; }
+.review-option { padding: 8px 12px; border-radius: 12px; margin-bottom: 4px; }
+.review-correct { background: #DDF5E6; color: #14532D; }
+.review-wrong { background: #FBE3E6; color: #8A1C2B; }
