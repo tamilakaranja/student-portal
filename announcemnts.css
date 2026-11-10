@@ -222,3 +222,66 @@ body {
   font-weight: 500;
   opacity: 0.75;
 }
+
+
+/* announcements card  */
+
+announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+ 
+.card {
+  padding: 20px;
+  border: 1px solid #E9DFC8;
+  border-radius: 16px;
+  background: #fff;
+}
+ 
+.card-full {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.category {
+  font-weight: 600;
+}
+ 
+.category-events {
+  color: #1E5A3A;
+}
+ 
+.category-meetings {
+  color: #4B3B7A;
+}
+ 
+.card-date {
+  color: #6B5A5F;
+}
+ 
+.badge-new {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #722F37;
+  color: #FFF9E6;
+  font-size: 12px;
+  font-weight: 600;
+}
+ 
+.card-title {
+  margin: 6px 0 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+ 
+.card-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3F3135;
+}
+ 
