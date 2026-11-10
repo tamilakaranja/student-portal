@@ -86,7 +86,7 @@ body {
   color: var(--cream);
 }
 
-/* main content  */
+
 .back-link {
   display: block;
   width: 100%;
@@ -98,6 +98,9 @@ body {
   font-weight: 600;
   text-decoration: none;
 }
+
+/* main content  */
+
 
 
 .profile-container {
