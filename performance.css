@@ -101,3 +101,22 @@ body {
     margin-bottom: 25px;
 }
 
+/* performance box  */
+.performance-box {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.performance-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 35px;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+
