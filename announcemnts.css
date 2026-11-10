@@ -17,6 +17,10 @@ body {
   background: var(--cream);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 /* top bar  */
 .topbar {
   display: flex;
@@ -226,7 +230,7 @@ body {
 
 /* announcements card  */
 
-announcements {
+.announcements {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -327,4 +331,118 @@ announcements {
   .pinned-title {
     font-size: 22px;
   } 
-   }
+  
+}
+
+
+
+/* readmore pop up  */
+
+
+.modal {
+  width: min(560px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
+  padding: 28px;
+  border: 0;
+  border-radius: 20px;
+  background: #fff;
+  color: #2B1E21;
+  box-shadow: 0 20px 60px rgba(43, 30, 33, 0.3);
+
+    margin: auto;
+  overflow-x: hidden;
+}
+ 
+.modal::backdrop {
+  background: rgba(43, 30, 33, 0.55);
+}
+ 
+body:has(.modal[open]) {
+  overflow: hidden;
+}
+ 
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #722F37;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+ 
+.modal-close:hover {
+  background: #F3E9CF;
+}
+ 
+.modal-full {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 44px 0 0;
+  font-size: 13px;
+  color: #6B5A5F;
+}
+ 
+.modal-category {
+  font-weight: 600;
+}
+ 
+.modal-title {
+  margin: 8px 44px 12px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #722F37;
+}
+ 
+.modal-text,
+.modal-details {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #3F3135;
+}
+
+.modal-details h4 {
+  margin: 18px 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #722F37;
+}
+
+.modal-details p {
+  margin: 0 0 8px;
+}
+
+.modal-details ul {
+  margin: 0 0 8px;
+  padding-left: 20px;
+}
+
+.modal-details li {
+  margin-bottom: 4px;
+}
+ 
+.modal-done {
+  min-height: 44px;
+  margin-top: 8px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 999px;
+  background: #722F37;
+  color: #FFF9E6;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+ 
+.modal-done:hover {
+  background: #5A242B;    }

@@ -36,3 +36,62 @@ filterButtons.forEach((button) => {
 
 updateCounts();
 applyFilter("all");
+
+
+
+// readmore 
+
+const modal = document.getElementById("announcement-modal");
+const modalCategory = document.getElementById("modal-category");
+const modalDate = document.getElementById("modal-date");
+const modalTitle = document.getElementById("modal-title");
+const modalText = document.getElementById("modal-text");
+const modalDetails = document.getElementById("modal-details");
+
+function textOf(parent, selector) {
+  const el = parent.querySelector(selector);
+  return el ? el.textContent.trim() : "";
+}
+
+function openModal(item) {
+  const isPinned = item.classList.contains("pinned");
+  const category = item.dataset.category;
+
+  if (isPinned) {
+
+    const [, ...rest] = textOf(item, ".pinned-info").split(/\s*[-·–]\s*/);
+    modalDate.textContent = rest.join(" - ");
+    modalTitle.textContent = textOf(item, ".pinned-title");
+    modalText.textContent = textOf(item, ".pinned-text");
+  } else {
+    modalDate.textContent = textOf(item, ".card-date");
+    modalTitle.textContent = textOf(item, ".card-title");
+    modalText.textContent = textOf(item, ".card-text");
+  }
+
+  modalCategory.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+  modalCategory.className = "modal-category category-" + category;
+
+  // Full details (when, what to bring, etc) 
+  const details = item.querySelector(".card-details");
+  modalDetails.innerHTML = details ? details.innerHTML : "";
+  modalDetails.hidden = !details;
+
+  modal.showModal();
+}
+
+document.querySelectorAll(".read-more, .btn-readmore").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    openModal(link.closest(".pinned, .card"));
+  });
+});
+
+// close buttons 
+modal.querySelectorAll("[data-close]").forEach((button) => {
+  button.addEventListener("click", () => modal.close());
+});
+
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) modal.close();
+});

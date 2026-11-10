@@ -91,7 +91,19 @@
 
 </main>
 
+<!-- pop up Modal  -->
 
+<dialog class="modal" id="announcement-modal" aria-labelledby="modal-title">
+  <button class="modal-close" type="button" aria-label="Close" data-close> close</button>
+  <div class="modal-full">
+    <span class="modal-category" id="modal-category"></span>
+    <span id="modal-date"></span>
+  </div>
+  <h2 class="modal-title" id="modal-title"></h2>
+  <p class="modal-text" id="modal-text"></p>
+  <p class="modal-details" id="modal-details" hidden></p>
+  <button class="modal-done" type="button" data-close>Close</button>
+</dialog>
 
  <script src="announcemnts.js"></script>
 
