@@ -85,4 +85,19 @@ body {
   color: var(--cream);
 }
 
+/* main content  */
+
+.dashboard {
+    width: 90%;
+    max-width: 1250px;
+    margin: 35px auto;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--forestgreen);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
 
