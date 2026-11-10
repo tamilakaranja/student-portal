@@ -211,3 +211,22 @@ input[type="password"]:focus {
 button:active {
   transform: scale(0.98);
 }
+
+.select-grade {
+  width: 100%;
+  padding: 13px 14px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--cream);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 251, 235, 0.2);
+  border-radius: 10px;
+}
+.style-inside {
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  border-radius: 999px;
+  cursor: pointer;
+}
