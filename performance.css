@@ -229,3 +229,18 @@ body {
     background: var(--forestgreen);
     border-radius: 20px;
 }
+
+/* perfomcance chart  */
+.chart-box {
+    min-height: 280px;
+    background: var(--cream);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--grey);
+    font-size: 14px;
+}
+
