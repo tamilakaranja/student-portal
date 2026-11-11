@@ -1,13 +1,8 @@
-// ============================================================
-//  ALL THE ASSIGNMENTS (shared by the dashboard and assignments page)
-// To add one: copy a block, give it a NEW id, set the grade, subject, due date and questions.
-// "answer" is the position of the right option, counting from 0 (A = 0, B = 1, C = 2, D = 3).
-// "due" is written as year-month-dayThour:minute (24-hour clock).
-// ============================================================
+
 
 const assignments = [
 
-  // ===================== GRADE 7 =====================
+// grade 7 
   {
     id: 'g7-math-fractions',
     grade: 'Grade 7',
@@ -65,7 +60,7 @@ const assignments = [
     ]
   },
 
-  // ===================== GRADE 8 =====================
+  //grade 8
   {
     id: 'g8-math-ratios',
     grade: 'Grade 8',
@@ -123,7 +118,7 @@ const assignments = [
     ]
   },
 
-  // ===================== GRADE 9 =====================
+  // grade 9
   {
     id: 'g9-math-pythagoras',
     grade: 'Grade 9',

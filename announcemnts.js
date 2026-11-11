@@ -2,15 +2,19 @@
 const filterButtons = document.querySelectorAll(".filter");
 const items = document.querySelectorAll(".pinned, .card");
 
-// Keep nos on the tabs in sync with the announcements 
+// this updates the numbers displayed on the filter tabs the function checks each button and find out what category it represents 
 function updateCounts() {
   filterButtons.forEach((button) => {
     const filter = button.dataset.filter;
     const total =
-      filter === "all"
-        ? items.length
+      filter === "all" //count every announcement if selected all
+        ? items.length //potherwise only count the announcements that belong to that vategory 
         : [...items].filter((item) => item.dataset.category === filter).length;
 
+        // the question mark is a ternary operator that is shorter than if...else
+            //ites converts the announcements into an arrya 
+        // filter selects only the announcements that are matching the category
+        //how mnay counts matched 
     const count = button.querySelector(".count");
     if (count) count.textContent = total;
   });
